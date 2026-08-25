@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shlok Kondekar | Portfolio - Aspiring Data Engineer</title>
+    <meta name="description" content="Personal Portfolio of Shlok Kondekar - B.Tech IT Student, Aspiring Data Engineer, Data Analytics & Cloud Data Platforms, Open Source Contributor.">
+    
+    <!-- Favicon Placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2300f2fe%22>S</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <span class="loader-text">Loading Shlok's Portfolio...</span>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Sticky Responsive Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-text">Shlok<span class="accent">.</span></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="#opensource" class="nav-link">Open Source</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-controls">
+                <button id="theme-btn" class="ctrl-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon dark-icon"></i>
+                    <i class="fa-solid fa-sun light-icon"></i>
+                </button>
+                <button id="menu-btn" class="ctrl-btn menu-btn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section section-padding">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content reveal-left">
+                    <div class="badge-wrapper">
+                        <span class="greeting-badge"><i class="fa-solid fa-hand-sparkles"></i> Hello, Welcome to my space</span>
+                    </div>
+                    <h1 class="hero-title">I'm <span class="highlight">Shlok Kondekar</span></h1>
+                    
+                    <div class="typing-container">
+                        <span class="fixed-text">I am a </span>
+                        <span class="typed-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </div>
+
+                    <p class="hero-desc">
+                        B.Tech Information Technology student interested in <strong>Data Engineering, Data Analytics, and Cloud Data Platforms</strong>. Skilled in Python, SQL, Pandas, NumPy, data cleaning, and visualization with hands-on database experience. Building knowledge of ETL/ELT pipelines, data integration, data lakes, and lakehouse architecture through Microsoft Fabric and multi-agent AI systems.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://shlokkondekar02.github.io/Resume/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fa-solid fa-file-arrow-down"></i> View / Download Resume
+                        </a>
+                        <div class="social-links">
+                            <a href="https://github.com/ShlokKondekar02" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shlokkondekar/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:kshlok2106@gmail.com" class="social-btn" aria-label="Email Shlok">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-tags">
+                        <span class="tag"><i class="fa-solid fa-database"></i> Data Engineering</span>
+                        <span class="tag"><i class="fa-solid fa-diagram-project"></i> ETL / ELT Pipelines</span>
+                        <span class="tag"><i class="fa-solid fa-cloud"></i> Microsoft Fabric & Lakehouse</span>
+                        <span class="tag"><i class="fa-brands fa-python"></i> Python & SQL</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal-right">
+                    <div class="profile-card-wrapper">
+                        <!-- Premium Glassmorphism Visualizer / Interactive Card -->
+                        <div class="profile-canvas">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-content">
+                                <div class="tech-icons-orbit">
+                                    <span class="orbit-icon icon-1" title="Python"><i class="fa-brands fa-python"></i></span>
+                                    <span class="orbit-icon icon-2" title="Databases & SQL"><i class="fa-solid fa-database"></i></span>
+                                    <span class="orbit-icon icon-3" title="Cloud & Fabric"><i class="fa-solid fa-cloud"></i></span>
+                                    <span class="orbit-icon icon-4" title="AI & LangGraph"><i class="fa-solid fa-brain"></i></span>
+                                </div>
+                                <div class="avatar-text-badge">
+                                    <span class="initial">SK</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-top">
+                            <i class="fa-solid fa-graduation-cap"></i> 9.34 CGPA (WIT Solapur)
+                        </div>
+                        <div class="floating-badge badge-bottom">
+                            <i class="fa-solid fa-server"></i> Aspiring Data Engineer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">Background Info</span>
+                    <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal-left">
+                        <h3 class="about-heading">Engineering scalable data pipelines, analytics systems, and intelligent multi-agent workflows.</h3>
+                        <p class="about-paragraph">
+                            I am an Information Technology B.Tech student pursuing my degree at <strong>Walchand Institute of Technology, Solapur</strong> (Current CGPA: <strong>9.34</strong>). My primary interest and expertise revolve around <strong>Data Engineering, Data Analytics, and Cloud Data Platforms</strong>.
+                        </p>
+                        <p class="about-paragraph">
+                            I am skilled in Python, SQL, Pandas, NumPy, data cleaning, exploratory data analysis, and visualization with hands-on database experience across MySQL, PostgreSQL/pgvector, MongoDB, and SQLite. Currently, I am actively building knowledge and practical architectures around <strong>ETL/ELT, data pipelines, data integration, data lakes, and lakehouse architecture</strong> through <strong>Microsoft Fabric, OneLake</strong>, and full-stack AI research systems like <em>Arclight</em>.
+                        </p>
+
+                        <div class="about-interests">
+                            <h4 class="interests-title">Core Focus & Interests</h4>
+                            <div class="interest-pills">
+                                <span class="pill"><i class="fa-solid fa-database"></i> Data Engineering & ETL/ELT</span>
+                                <span class="pill"><i class="fa-solid fa-cloud"></i> Microsoft Fabric & Lakehouse</span>
+                                <span class="pill"><i class="fa-solid fa-chart-pie"></i> Data Analytics & EDA</span>
+                                <span class="pill"><i class="fa-solid fa-brain"></i> Multi-Agent Workflows (LangGraph)</span>
+                                <span class="pill"><i class="fa-solid fa-code-fork"></i> Open Source (SSOC)</span>
+                            </div>
+                        </div>
+
+                        <div class="languages-box">
+                            <span class="lang-title"><i class="fa-solid fa-language"></i> Spoken Languages:</span>
+                            <span class="lang-item">English</span>
+                            <span class="lang-dot">•</span>
+                            <span class="lang-item">Marathi</span>
+                            <span class="lang-dot">•</span>
+                            <span class="lang-item">Hindi</span>
+                        </div>
+                    </div>
+
+                    <div class="about-stats reveal-right">
+                        <div class="stat-card box-accent">
+                            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="stat-info">
+                                <h4 class="stat-num">9.34</h4>
+                                <span class="stat-label">B.Tech IT CGPA</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-laptop-file"></i></div>
+                            <div class="stat-info">
+                                <h4 class="stat-num">10+</h4>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="stat-info">
+                                <h4 class="stat-num">4+</h4>
+                                <span class="stat-label">Industry Certifications</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-code-pull-request"></i></div>
+                            <div class="stat-info">
+                                <h4 class="stat-num">SSOC</h4>
+                                <span class="stat-label">Open Source Contributor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">Professional Path</span>
+                    <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="timeline-container reveal-up">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Internship</span>
+                            <h3 class="timeline-title">Data Visualization & Sustainability Intern</h3>
+                            <h4 class="timeline-org">1M1B (1 Million for 1 Billion)</h4>
+                            <ul class="timeline-details-list">
+                                <li>Worked with college-related datasets to explore data cleaning, analysis, and visualization techniques.</li>
+                                <li>Created data visualizations and dashboards using <strong>Tableau Public</strong> to communicate insights clearly.</li>
+                                <li>Gained practical exposure to data analysis and visualization workflows.</li>
+                                <li>Explored basic AI concepts and their applications in data-related projects.</li>
+                                <li>Developed communication and presentation skills by explaining data-driven findings and project outcomes.</li>
+                            </ul>
+                            <div class="tech-pills">
+                                <span>Tableau Public</span>
+                                <span>Data Cleaning</span>
+                                <span>Data Visualization</span>
+                                <span>Data Analysis</span>
+                                <span>AI Concepts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">Technical Stack</span>
+                    <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                    <div class="header-line"></div>
+                    <p class="section-desc">A categorized showcase of my proficiencies across Data Engineering, Analytics, Databases, Programming Languages, and Tools.</p>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card glass-card reveal-up">
+                        <div class="card-top-accent"></div>
+                        <div class="category-header">
+                            <i class="fa-solid fa-code cat-icon"></i>
+                            <h3 class="category-title">Programming Languages</h3>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span class="skill-name"><i class="fa-brands fa-python skill-icon"></i> Python</span>
+                                    <span class="skill-lvl">Advanced</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span class="skill-name"><i class="fa-solid fa-database skill-icon"></i> SQL</span>
+                                    <span class="skill-lvl">Proficient</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span class="skill-name"><i class="fa-brands fa-java skill-icon"></i> Java</span>
+                                    <span class="skill-lvl">Proficient</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span class="skill-name"><i class="fa-solid fa-terminal skill-icon"></i> C</span>
+                                    <span class="skill-lvl">Intermediate</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data & Analytics -->
+                    <div class="skill-category-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="card-top-accent"></div>
+                        <div class="category-header">
+                            <i class="fa-solid fa-chart-pie cat-icon"></i>
+                            <h3 class="category-title">Data & Analytics</h3>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span class="skill-name"><i class="fa-solid fa-table skill-icon"></i> Pandas & NumPy</span>
+                                    <span class="skill-lvl">Advanced</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span class="skill-name"><i class="fa-solid fa-broom skill-icon"></i> Data Cleaning & Prep</span>
+                                    <span class="skill-lvl">Advanced</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span class="skill-name"><i class="fa-solid fa-magnifying-glass-chart skill-icon"></i> Exploratory Data Analysis (EDA)</span>
+                                    <span class="skill-lvl">Proficient</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span class="skill-name"><i class="fa-solid fa-chart-line skill-icon"></i> Data Visualization (Matplotlib)</span>
+                                    <span class="skill-lvl">Proficient</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Engineering & Lakehouse -->
+                    <div class="skill-category-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="card-top-accent"></div>
+                        <div class="category-header">
+                            <i class="fa-solid fa-diagram-project cat-icon"></i>
+                            <h3 class="category-title">Data Engineering (Learning)</h3>
+                        </div>
+                        <div class="pill-skills-container">
+                            <div class="skill-pill-box">
+                                <span class="pill-head">Pipelines & Architectures</span>
+                                <div class="pills-collection">
+                                    <span class="token box-highlight"><i class="fa-solid fa-network-wired"></i> ETL / ELT</span>
+                                    <span class="token box-highlight"><i class="fa-solid fa-arrow-right-arrow-left"></i> Data Pipelines</span>
+                                    <span class="token"><i class="fa-solid fa-shuffle"></i> Data Integration</span>
+                                    <span class="token"><i class="fa-solid fa-gears"></i> Data Transformation</span>
+                                </div>
+                            </div>
+                            <div class="skill-pill-box">
+                                <span class="pill-head">Data Platforms & Lakehouse</span>
+                                <div class="pills-collection">
+                                    <span class="token box-highlight"><i class="fa-solid fa-cloud"></i> Microsoft Fabric</span>
+                                    <span class="token"><i class="fa-solid fa-water"></i> OneLake</span>
+                                    <span class="token"><i class="fa-solid fa-warehouse"></i> Lakehouse Architecture</span>
+                                    <span class="token"><i class="fa-solid fa-cubes-stacked"></i> Data Warehouse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Vector Stores -->
+                    <div class="skill-category-card glass-card reveal-up" style="transition-delay: 0.3s;">
+                        <div class="card-top-accent"></div>
+                        <div class="category-header">
+                            <i class="fa-solid fa-server cat-icon"></i>
+                            <h3 class="category-title">Databases & Storage</h3>
+                        </div>
+                        <div class="pill-skills-container">
+                            <div class="skill-pill-box">
+                                <span class="pill-head">Relational & Vector</span>
+                                <div class="pills-collection">
+                                    <span class="token box-highlight"><i class="fa-solid fa-database"></i> MySQL</span>
+                                    <span class="token box-highlight"><i class="fa-solid fa-brain"></i> PostgreSQL (pgvector)</span>
+                                    <span class="token"><i class="fa-solid fa-bolt"></i> Redis</span>
+                                </div>
+                            </div>
+                            <div class="skill-pill-box">
+                                <span class="pill-head">NoSQL & Embedded</span>
+                                <div class="pills-collection">
+                                    <span class="token"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                                    <span class="token"><i class="fa-solid fa-box-archive"></i> SQLite</span>
+                                </div>
+                            </div>
+                            <div class="skill-pill-box">
+                                <span class="pill-head">Tools & Ecosystem</span>
+                                <div class="pills-collection">
+                                    <span class="token"><i class="fa-brands fa-git-alt"></i> Git</span>
+                                    <span class="token"><i class="fa-brands fa-github"></i> GitHub</span>
+                                    <span class="token"><i class="fa-solid fa-code"></i> VS Code</span>
+                                    <span class="token"><i class="fa-solid fa-book-journal-whills"></i> Jupyter</span>
+                                    <span class="token"><i class="fa-solid fa-chart-column"></i> Tableau</span>
+                                    <span class="token"><i class="fa-solid fa-face-smile"></i> Hugging Face</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">Practical Endeavors</span>
+                    <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                    <div class="header-line"></div>
+                    <p class="section-desc">A deep dive into multi-agent AI research platforms, automated diagram generation, and interactive data analytics dashboards.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Featured Project 1: Arclight - AI Research Assistant -->
+                    <div class="project-card featured-card glass-card reveal-up">
+                        <div class="project-img-placeholder">
+                            <div class="img-gradient bg-grad-1"></div>
+                            <span class="project-tag-top">AI & Research</span>
+                            <span class="project-status-pill ongoing">Ongoing</span>
+                            <i class="fa-solid fa-atom project-center-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Arclight - AI Research Assistant</h3>
+                            <p class="project-desc">
+                                AI-powered academic research assistant for searching, organizing, and analyzing research papers from arXiv, Semantic Scholar, and OpenAlex.
+                            </p>
+                            <ul class="project-bullet-list">
+                                <li>Implemented concurrent paper retrieval, normalization, deduplication, and hybrid ranking using keyword matching, semantic similarity, recency, and citations.</li>
+                                <li>Built structured AI analysis extracting objectives, methodology, results, limitations, research gaps, and future work.</li>
+                                <li>Developed a <strong>LangGraph</strong> multi-agent workflow for paper search, thematic clustering, research-gap detection, and literature reviews.</li>
+                                <li>Leveraged <strong>PostgreSQL with pgvector, Redis, and Celery</strong> for semantic retrieval, caching, and async processing.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>React 19</span>
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                                <span>pgvector</span>
+                                <span>Redis</span>
+                                <span>Celery</span>
+                                <span>LangGraph</span>
+                                <span>LLM APIs</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ShlokKondekar02" target="_blank" rel="noopener noreferrer" class="card-btn btn-outline">
+                                    <i class="fa-brands fa-github"></i> Repository
+                                </a>
+                                <span class="card-btn static-badge"><i class="fa-solid fa-microchip"></i> Multi-Agent AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Project 2: AI-Assisted Technical Diagram Generation -->
+                    <div class="project-card featured-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="project-img-placeholder">
+                            <div class="img-gradient bg-grad-4"></div>
+                            <span class="project-tag-top">Generative AI & NLP</span>
+                            <span class="project-status-pill ongoing">Ongoing</span>
+                            <i class="fa-solid fa-sitemap project-center-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">AI-Assisted Technical Diagram Generation</h3>
+                            <p class="project-desc">
+                                Hybrid intelligence framework translating natural-language architectural and system prompts into dynamic, structured technical diagrams.
+                            </p>
+                            <ul class="project-bullet-list">
+                                <li>Developed a hybrid routing system classifying diagram requests based on complexity and dispatching to suitable generation pipelines.</li>
+                                <li>Utilized structured information extraction with strict JSON validation to convert natural language into diagram-ready structures.</li>
+                                <li>Integrated rendering support for flowcharts, UML, ER diagrams, network topologies, circuit diagrams, and software architectures using <strong>Mermaid.js</strong> and <strong>Graphviz</strong>.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>NLP</span>
+                                <span>Mermaid.js</span>
+                                <span>Graphviz</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ShlokKondekar02" target="_blank" rel="noopener noreferrer" class="card-btn btn-outline">
+                                    <i class="fa-brands fa-github"></i> Repository
+                                </a>
+                                <span class="card-btn static-badge"><i class="fa-solid fa-diagram-project"></i> Diagram Engine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Project 3: Sustainability Analytics Dashboard -->
+                    <div class="project-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="project-img-placeholder">
+                            <div class="img-gradient bg-grad-6"></div>
+                            <span class="project-tag-top">Data Visualization</span>
+                            <span class="project-status-pill featured">1M1B Project</span>
+                            <i class="fa-solid fa-chart-pie project-center-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Sustainability Analytics Dashboard</h3>
+                            <p class="project-desc">
+                                Interactive multi-metric dashboard engineered during industry internship for comprehensive analysis and presentation of sustainability datasets.
+                            </p>
+                            <ul class="project-bullet-list">
+                                <li>Conducted thorough data cleaning, transformation, and preparation before visualization.</li>
+                                <li>Engineered custom interactive charts and KPI dashboards identifying environmental trends and communicating insights clearly.</li>
+                                <li>Presented sustainability metrics and actionable outcomes to stakeholders through <strong>Tableau Public</strong>.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Tableau Public</span>
+                                <span>Data Cleaning</span>
+                                <span>Data Visualization</span>
+                                <span>EDA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer" class="card-btn btn-outline">
+                                    <i class="fa-solid fa-chart-simple"></i> Tableau Hub
+                                </a>
+                                <span class="card-btn static-badge"><i class="fa-solid fa-leaf"></i> 1M1B Core</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: AarogyaCare -->
+                    <div class="project-card glass-card reveal-up">
+                        <div class="project-img-placeholder">
+                            <div class="img-gradient bg-grad-1"></div>
+                            <span class="project-tag-top">Healthcare Web</span>
+                            <i class="fa-solid fa-notes-medical project-center-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">AarogyaCare</h3>
+                            <p class="project-desc">
+                                Comprehensive healthcare-focused web platform delivering structured medical information, wellness resources, and streamlined user interfaces.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ShlokKondekar02/AarogyaCare" target="_blank" rel="noopener noreferrer" class="card-btn btn-outline">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                                <a href="https://aarogyacare.netlify.app/" target="_blank" rel="noopener noreferrer" class="card-btn btn-fill">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Blood Management System -->
+                    <div class="project-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="project-img-placeholder">
+                            <div class="img-gradient bg-grad-2"></div>
+                            <span class="project-tag-top">Emergency Services</span>
+                            <i class="fa-solid fa-droplet project-center-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Blood Management System</h3>
+                            <p class="project-desc">
+                                Web portal engineered to map blood donor databases and broadcast real-time availability updates in emergency regional workflows.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ShlokKondekar02/Blood_Management" target="_blank" rel="noopener noreferrer" class="card-btn btn-outline">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                                <a href="https://bloodmanagement1.netlify.app/" target="_blank" rel="noopener noreferrer" class="card-btn btn-fill">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: AyurSleep -->
+                    <div class="project-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="project-img-placeholder">
+                            <div class="img-gradient bg-grad-3"></div>
+                            <span class="project-tag-top">Wellness & ML</span>
+                            <i class="fa-solid fa-bed project-center-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">AyurSleep</h3>
+                            <p class="project-desc">
+                                Holistic sleep optimization platform combining Ayurvedic lifestyle principles with algorithmic sleep habits assessment feedback.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ShlokKondekar02/AyurSleep" target="_blank" rel="noopener noreferrer" class="card-btn btn-outline">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                                <span class="card-btn static-badge"><i class="fa-solid fa-heart-pulse"></i> Wellness App</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Habit Agent Project -->
+                    <div class="project-card glass-card reveal-up">
+                        <div class="project-img-placeholder">
+                            <div class="img-gradient bg-grad-5"></div>
+                            <span class="project-tag-top">Generative AI</span>
+                            <i class="fa-solid fa-robot project-center-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">AI Habit Coach & Workout Agent</h3>
+                            <p class="project-desc">
+                                Generative AI-powered personalized framework analyzing habits, generating automated workout trajectories, and feeding adaptive feedback loops.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Jupyter Notebook</span>
+                                <span>GenAI API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ShlokKondekar02/Habit-agent-project" target="_blank" rel="noopener noreferrer" class="card-btn btn-outline">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                                <a href="https://github.com/ShlokKondekar02/Habit-agent-project" target="_blank" rel="noopener noreferrer" class="card-btn btn-fill">
+                                    <i class="fa-solid fa-book"></i> Docs View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: Student Management System -->
+                    <div class="project-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="project-img-placeholder">
+                            <div class="img-gradient bg-grad-2"></div>
+                            <span class="project-tag-top">Enterprise CRUD</span>
+                            <i class="fa-solid fa-users-gear project-center-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Student Management System</h3>
+                            <p class="project-desc">
+                                Robust Java-based CRUD system with multi-role access authentication models, and optimized relational MySQL queries.
+                            </p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>MySQL</span>
+                                <span>OOP Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ShlokKondekar02" target="_blank" rel="noopener noreferrer" class="card-btn btn-outline">
+                                    <i class="fa-brands fa-github"></i> GitHub Root
+                                </a>
+                                <span class="card-btn static-badge"><i class="fa-solid fa-laptop-code"></i> Academic Suite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Training Section -->
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">Qualifications</span>
+                    <h2 class="section-title">Certifications & <span class="highlight">Training</span></h2>
+                    <div class="header-line"></div>
+                    <p class="section-desc">Credentials and verified technical competencies across Cloud Architecting, Data Fundamentals, Cybersecurity, and Research.</p>
+                </div>
+
+                <div class="certs-grid">
+                    
+                    <!-- Cert 1: IBM -->
+                    <div class="cert-card glass-card reveal-up">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-badge-tag">Data Engineering & Analytics</span>
+                            <h3 class="cert-title">Data Fundamentals</h3>
+                            <div class="cert-issuer">
+                                <i class="fa-solid fa-award"></i> IBM SkillsBuild
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2: AWS -->
+                    <div class="cert-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-brands fa-aws"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-badge-tag">Cloud Architecture</span>
+                            <h3 class="cert-title">AWS Academy Graduate - Cloud Architecting</h3>
+                            <div class="cert-issuer">
+                                <i class="fa-solid fa-award"></i> Amazon Web Services (AWS) Training & Certification
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3: Cisco -->
+                    <div class="cert-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-badge-tag">Security & Networks</span>
+                            <h3 class="cert-title">Introduction to Cybersecurity</h3>
+                            <div class="cert-issuer">
+                                <i class="fa-solid fa-award"></i> Cisco Networking Academy
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4: NPTEL -->
+                    <div class="cert-card glass-card reveal-up" style="transition-delay: 0.3s;">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-badge-tag">Scientific Methodology</span>
+                            <h3 class="cert-title">Research Methodology</h3>
+                            <div class="cert-issuer">
+                                <i class="fa-solid fa-award"></i> NPTEL (National Programme on Technology Enhanced Learning)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Open-Source Contributions Section -->
+        <section id="opensource" class="opensource-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">Community & Open Source</span>
+                    <h2 class="section-title">Open-Source <span class="highlight">Contributions</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="oss-grid reveal-up">
+                    <div class="oss-card glass-card">
+                        <div class="oss-icon-box">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <div class="oss-content">
+                            <div class="oss-role-badge">
+                                <i class="fa-solid fa-circle-check"></i> Contributor
+                            </div>
+                            <h3 class="oss-title">Social Summer of Code (SSOC)</h3>
+                            <p class="oss-desc">
+                                Contributed to open-source software initiatives through the Social Summer of Code program. Actively participated in collaborative GitHub workflows, code reviews, issue resolution, and developing impactful developer features.
+                            </p>
+                            <div class="oss-tags">
+                                <span><i class="fa-brands fa-git-alt"></i> Open Source</span>
+                                <span><i class="fa-brands fa-github"></i> GitHub Workflows</span>
+                                <span><i class="fa-solid fa-code-pull-request"></i> Pull Requests</span>
+                                <span><i class="fa-solid fa-users"></i> Community Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">Academic Milestones</span>
+                    <h2 class="section-title">My <span class="highlight">Education</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="education-timeline">
+                    
+                    <!-- B.Tech Degree Info -->
+                    <div class="edu-card glass-card reveal-left">
+                        <div class="edu-year-badge">2023 – 2027</div>
+                        <div class="edu-content">
+                            <span class="edu-lvl">Undergraduate Program</span>
+                            <h3 class="edu-title">Bachelor of Technology (B.Tech) - Information Technology</h3>
+                            <h4 class="edu-institute"><i class="fa-solid fa-building-columns"></i> Walchand Institute of Technology, Solapur</h4>
+                            <p class="edu-desc">
+                                Focused on Data Engineering, Data Analytics, Database Management Systems, Cloud Platforms, and Multi-Agent AI Architectures alongside solid computer science fundamentals.
+                            </p>
+                            <div class="score-pills-row">
+                                <span class="score-badge"><i class="fa-solid fa-star"></i> CGPA: <strong>9.34 / 10</strong></span>
+                            </div>
+                            <div class="status-marker current"><i class="fa-solid fa-arrows-spin"></i> Currently Pursuing</div>
+                        </div>
+                    </div>
+
+                    <!-- HSC Info -->
+                    <div class="edu-card glass-card reveal-right">
+                        <div class="edu-year-badge">2022 – 2023</div>
+                        <div class="edu-content">
+                            <span class="edu-lvl">Higher Secondary Certificate (HSC)</span>
+                            <h3 class="edu-title">Higher Secondary Certificate (Science Stream)</h3>
+                            <h4 class="edu-institute"><i class="fa-solid fa-school"></i> Dayanand Science College, Latur</h4>
+                            <p class="edu-desc">
+                                Completed higher secondary education with strong analytical foundations in Mathematics, Physics, and Chemistry.
+                            </p>
+                            <div class="score-pills-row">
+                                <span class="score-badge"><i class="fa-solid fa-award"></i> HSC Score: <strong>74.83%</strong></span>
+                                <span class="score-badge"><i class="fa-solid fa-star"></i> MHT-CET Percentile: <strong>94.04%</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Highlights -->
+        <section id="achievements" class="achievements-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">Honors & Activities</span>
+                    <h2 class="section-title">Achievements & <span class="highlight">Highlights</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    
+                    <!-- Card 1 -->
+                    <div class="ach-card glass-card reveal-up">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-star"></i></div>
+                        <div class="ach-text">
+                            <h3 class="ach-title">9.34 B.Tech CGPA</h3>
+                            <p class="ach-desc">Consistent high academic standing in Information Technology coursework at Walchand Institute of Technology.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="ach-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="ach-text">
+                            <h3 class="ach-title">300+ Problems Solved</h3>
+                            <p class="ach-desc">Expanded core problem solving skills across data structures, algorithms, and algorithmic reasoning platforms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="ach-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-code-pull-request"></i></div>
+                        <div class="ach-text">
+                            <h3 class="ach-title">SSOC Contributor</h3>
+                            <p class="ach-desc">Selected contributor to open-source software initiatives in Social Summer of Code (SSOC).</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="ach-card glass-card reveal-up" style="transition-delay: 0.3s;">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-certificate"></i></div>
+                        <div class="ach-text">
+                            <h3 class="ach-title">4 Industry Credentials</h3>
+                            <p class="ach-desc">Earned verified certifications from IBM SkillsBuild, AWS Academy, Cisco, and NPTEL.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="highlight">Shlok</span></h2>
+                    <div class="header-line"></div>
+                    <p class="section-desc">Open for Data Engineering & Analytics roles, software internships, and collaborative project opportunities.</p>
+                </div>
+
+                <div class="contact-layout">
+                    
+                    <!-- Direct Info Box -->
+                    <div class="contact-info-panel reveal-left">
+                        <div class="info-block glass-card">
+                            <h3 class="panel-heading">Let's Connect Directly</h3>
+                            <p class="panel-desc">Feel free to reach out for career discussions, internship openings, data project inquiries, or collaborations.</p>
+                            
+                            <div class="contact-methods">
+                                <div class="method-item">
+                                    <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="method-txt">
+                                        <span class="m-label">Email Address</span>
+                                        <a href="mailto:kshlok2106@gmail.com" class="m-val">kshlok2106@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="method-item">
+                                    <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="method-txt">
+                                        <span class="m-label">Phone Number</span>
+                                        <a href="tel:+918600409909" class="m-val">+91 8600409909</a>
+                                    </div>
+                                </div>
+
+                                <div class="method-item">
+                                    <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="method-txt">
+                                        <span class="m-label">Location Base</span>
+                                        <span class="m-val">Solapur, Maharashtra, India</span>
+                                    </div>
+                                </div>
+
+                                <div class="method-item">
+                                    <div class="method-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                    <div class="method-txt">
+                                        <span class="m-label">Institution Base</span>
+                                        <span class="m-val">Walchand Institute of Technology</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-socials">
+                                <span class="follow-label">Connect Online:</span>
+                                <div class="social-circle-row">
+                                    <a href="https://github.com/ShlokKondekar02" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/shlokkondekar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="mailto:kshlok2106@gmail.com" aria-label="Direct Email"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client-Side Form Simulation UI -->
+                    <div class="contact-form-panel reveal-right">
+                        <form id="portfolio-contact-form" class="glass-form" onsubmit="return handleFormSubmit(event)">
+                            <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Send a Message</h3>
+                            
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label for="sender-name">Your Name</label>
+                                    <input type="text" id="sender-name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="sender-email">Your Email</label>
+                                    <input type="email" id="sender-email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="message-subject">Subject</label>
+                                <input type="text" id="message-subject" name="subject" placeholder="Internship / Project Query" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="sender-msg">Message Content</label>
+                                <textarea id="sender-msg" name="message" rows="5" placeholder="Write your message or project specifics here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit" id="submit-btn">
+                                <span class="btn-text">Transmit Communication</span>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+
+                            <div id="form-feedback" class="feedback-msg"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo-footer">Shlok<span class="accent">.</span></a>
+                    <p class="footer-tagline">Aspiring Data Engineer passionate about robust data pipelines, analytics systems, and intelligent multi-agent AI ecosystems.</p>
+                </div>
+                <div class="footer-links-box">
+                    <span class="f-head">Quick Links</span>
+                    <div class="f-grid">
+                        <a href="#hero">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#certifications">Certifications</a>
+                        <a href="#opensource">Open Source</a>
+                        <a href="#education">Education</a>
+                    </div>
+                </div>
+                <div class="footer-cta">
+                    <span class="f-head">Resume Access</span>
+                    <a href="https://shlokkondekar02.github.io/Resume/" target="_blank" rel="noopener noreferrer" class="f-resume-link">
+                        <i class="fa-solid fa-file-lines"></i> Interactive Web Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright-txt">
+                    &copy; <span id="current-year">2026</span> Shlok Kondekar. Built with modern Vanilla HTML5, CSS3, and ES6 JS.
+                </p>
+                
+                <button id="back-to-top" class="btt-btn" aria-label="Scroll Back to Top">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
